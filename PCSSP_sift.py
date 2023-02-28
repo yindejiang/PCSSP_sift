@@ -97,7 +97,7 @@ for fire in candfiles:
         p.append(B)                                                                                          
     ACCEL1.insert(loc=7, column='p', value=p)  
             
-    #ACCEL1 = ACCEL1.drop_duplicates(subset="p",keep='first')                                                 
+    ACCEL1 = ACCEL1.drop_duplicates(subset="p",keep='first')                                                 
     ACCEL1.to_csv("./Candidate/ACCEL_File/" + fire +  '_Max.csv',sep=',',index=0,header=1)                   
     
     
