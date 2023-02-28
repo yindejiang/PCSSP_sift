@@ -1,6 +1,6 @@
 #！/bin/bash
 #################################################################
-python PCSSP_sift.py     ###步骤5
+python PCSSP_sift.py     
 
 dm=`cat ./Candidate/*ACCEL-DM.txt`
 cand=`cat ./Candidate/*ACCEL-accelcand.txt`
