@@ -140,9 +140,9 @@ for i in range(len(DF_)):
     and ( candidate_p[i] <= Max_period )\
     and ( max(DF[DF["p"] == candidate_p[i]].Sigma)  >= sigma_threshold ):
     # You can add other conditions here.
-        CAND.append(candidate_Name[i])
+        CAND.append(candidate_p[i])
     else:
-        Non_CAND.append(candidate_Name[i])
+        Non_CAND.append(candidate_p[i])
 
 
 pp = []
