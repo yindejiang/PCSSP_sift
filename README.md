@@ -11,6 +11,7 @@ If you choose to install ananconda on your system, these basic packages are avai
 ImageMagick is a free, open-source software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats, including JPEG, PNG, GIF, TIFF, and PDF.
 
 The following are the instructionswhen I installed Imagemagick in my Centos 7 , which you can use as a reference.
+
 2.1 Install some dependencies
 sudo yum group install "Development Tools" --setopt=group_package_types=mandatory,default,optional
 
