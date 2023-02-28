@@ -5,7 +5,7 @@ These scripts are written based on python and shell！
 
 ---
 
-You just need to copy PCSSP_sift.py and PCSP _ sift.sh to your directory of "*ACCEL*0" files from accelsearch search of PRESTO and run PCSSP_sift.sh!
+You just need to copy PCSSP_sift.py and PCSP _ sift.sh to your directory of "$*ACCEL*$0" files from accelsearch search of PRESTO and run PCSSP_sift.sh!
 
 That is, on your terminal:
 
@@ -17,10 +17,10 @@ Before you run these scripts directly to generate the diagnosis plots of pulsar 
 1. pandas, os, shutil, re, numpy, glob, matplotlib are necessary for python3.x.
 If you choose to install ananconda on your system, these basic packages are available.
 
-2. You must install ImageMagick in order to synthesize the diagnostic map of pulsar candidates.
+2. You must install ImageMagick in order to synthesize the diagnostic plots of pulsar candidates.
 ImageMagick is a free, open-source software suite, used for editing and manipulating digital images. It can be used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats, including JPEG, PNG, GIF, TIFF, and PDF.
 
-The following are the instructionswhen I installed Imagemagick in my Centos 7 , which you can use as a reference.
+The following are the instructions when I installed Imagemagick in my Centos 7 , which you can use as a reference.
 
 2.1 Install some dependencies
 
@@ -36,11 +36,11 @@ yum install ImageMagick-devel
 convert -v
 
 # Notes
-The writing of this script inspired the DM-Sigma plot of Pan et al and the ACCEL_sift.py from PRESTO.
+The writing of this scripts are inspired from both the DM-Sigma plot of Pan et al and the ACCEL_sift.py of PRESTO.
 
 This script was originally designed to select faint millisecond pulsars with high dispersion mearsure (e.g., DM > 100 cm$\-3$pc).
 
-In this script, you are allowed to set the conditions of pulsar candidate filtering in the first few lines of python script.
+In this script, you are allowed to set the conditions of pulsar candidate filtering in the first few lines of python script, by yourself.
 
 The following are related references：
 
