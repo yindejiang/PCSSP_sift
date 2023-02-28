@@ -3,7 +3,7 @@ PCSSP_sift is the short for Pulsar Candidate Sifting and Synthesis Pipeline. Thi
 
 These scripts are written based on python and shell！
 
-#---
+---
 
 You just need to copy PCSSP_sift.py and PCSP _ sift.sh to your directory of "*ACCEL*0" files from accelsearch search of PRESTO and run PCSSP_sift.sh!
 
@@ -11,7 +11,7 @@ That is, on your terminal:
 
 sh PCSSP_sift.sh
 
-#---
+---
 
 Before you run these scripts directly to generate the diagnosis plots of pulsar candidates, you'd better check whether the relevant packages and libraries are installed in your system！
 1. pandas, os, shutil, re, numpy, glob, matplotlib are necessary for python3.x.
