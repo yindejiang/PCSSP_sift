@@ -210,7 +210,7 @@ for i in range(len(CAND)):
     d = {'x': candidate_["DM"], 'y': candidate_["Sigma"]}
     df = pd.DataFrame(data=d)
     df = df.sort_values(by='x', ascending=True)
-    ax[0].plot(df['x'], df['y'], color="#4b5cc4")
+    ax[0].plot(df['x'], df['y'], color="#791E94")
     ax[0].scatter(df['x'], df['y'], color="#0080ff")
     ax[0].axvline(list(candidate_["DM"])[AA[0]],c="red",linestyle='--', linewidth=2,label=str(list(candidate_["DM"])[AA[0]])+ " (cm$^{-3}$ pc)")
     ax[0].set_xlabel("Trial DM" +" (cm$^{-3}$ pc)", fontsize=14)
