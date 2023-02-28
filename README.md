@@ -13,12 +13,35 @@ ImageMagick is a free, open-source software suite, used for editing and manipula
 The following are the instructionswhen I installed Imagemagick in my Centos 7 , which you can use as a reference.
 
 2.1 Install some dependencies
+
 sudo yum group install "Development Tools" --setopt=group_package_types=mandatory,default,optional
 
 2.2 Install Imagemagick
+
 yum install ImageMagick
 yum install ImageMagick-devel
 
 2.3 Testing in the terminal, enter convert.
+
 convert -v
+
+# Notes
+The writing of this script inspired the DM-Sigma plot of Pan et al and the ACCEL_sift.py from PRESTO.
+
+This script was originally designed to select faint millisecond pulsars with high dispersion mearsure (e.g., DM > 100 cm$\-3$pc).
+
+In this script, you are allowed to set the conditions of pulsar candidate filtering in the first few lines of python script.
+
+The following are related references：
+
+1. PRESTO
+
+https://github.com/scottransom/presto
+
+2. DM-Sigma plot from Pan et al
+
+https://ui.adsabs.harvard.edu/abs/2021RAA....21..143P/abstract
+
+
+
 
