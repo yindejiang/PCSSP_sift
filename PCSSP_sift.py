@@ -219,7 +219,8 @@ for i in range(len(CAND)):
     ax[0].set_xlim(min(candidate_["DM"])-0.05 ,max(candidate_["DM"])+0.05)
     
     #ax[1].hist(x, bins = 50, color="#4c8dae")
-    ax[1].scatter(candidate_["Period"], candidate_["Sigma"],s=30, color="#4c8dae")
+    candidate_1 = candidate_.sort_values(by='Period', ascending=True)
+    ax[1].scatter(candidate_1["Period"], candidate_1["Sigma"],s=30, color="#4c8dae")
     ax[1].scatter(list(candidate_["Period"])[AA[0]],list(candidate_["Sigma"])[AA[0]], s=30, c="red",marker='s', label = "Period = " + str(list(candidate_["Period"])[AA[0]])+ " ms")
     ax[1].scatter(list(candidate_["Period"])[AA[0]],list(candidate_["Sigma"])[AA[0]], c="red",alpha=0.0, label = "Harm Num = " + str(list(candidate_["Num Harm"])[AA[0]]))
     ax[1].scatter(list(candidate_["Period"])[AA[0]],list(candidate_["Sigma"])[AA[0]], c="red",alpha=0.0, label = "Accel = " + str(list(candidate_["Accel"])[AA[0]])+ " m/s^2")
