@@ -17,15 +17,15 @@ import matplotlib.pyplot as plt
 # the precise decimal point of the dfferent periods divided into one group, default is 6.
 Period_digital = 6
 # Minimum period of candidate (ms), the default is 0.5 ms.
-Min_period = 4
+Min_period = 0.5
 # Maximum period of candidate (ms), the default is 15000 ms or 15 s.
-Max_period = 8
+Max_period = 15000
 # The number of  each candidate appears in different trial DM, at least!, the default is  3 times.
 period_num_min = 2
 # The range of trial DM for each candidate, the default is 100. 
 # If you want to search for faint high dispersion measure millisecond pulsars, 
 # this value can be set very small, such as 2 or 1 (especially for globular clusters with several known pulsars).
-DM_range = 3
+DM_range = 100
 # Ignore candidates with a sigma (from incoherent power summation) less than this
 sigma_threshold = 2.0
 # Perhaps you can continue to add the conditions for screening candidates here,
